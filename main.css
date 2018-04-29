@@ -1,0 +1,870 @@
+body, html{
+    width:100%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #E9EBEE;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a:link, a:hover, a:visited, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color : #4267B2;
+    z-index: 1;
+}
+
+.header-helper{
+    height: 42px;
+    background-color : #4267B2;
+    color: white;
+    z-index: 1;
+}
+.center-container{
+    width: 1212px;
+    margin: 0 auto;
+    display: flex;
+    padding-right: 200px;
+}
+
+header .center-container{
+    position: relative;
+    height: inherit;
+    align-items: center;
+}
+
+
+.left-header{
+    display: flex;
+}
+
+.right-header{
+	font-size:12px;
+	display: flex;
+	align-items: center;
+}
+
+
+.justify{
+    justify-content: space-between;
+}
+
+.parent-centering{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-logo{
+    display: block;
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+    background-position: 0 -171px;
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;    
+}
+
+
+.main-logo-div, .search-div, .search-button, .header-profile-div, .header-profile-img, .header-profile-name{
+    display: inline-block;
+}
+
+.search-input{
+    background-color: #fff;
+    /* border:1px solid #3b5998; */
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height:24px;
+    width:400px;
+    padding: 5px;
+    outline: none;
+}
+
+.search-button{
+    height: 24px;
+    padding : 0 16px;
+    background-color: #f6f7f9;
+    position: relative;
+    border-radius: 2px;
+    /* border: 1px solid #3b5998; */
+	border-radius: 2px;
+    margin-left: -3px;
+    border:none;
+}
+
+
+.search-button:hover{
+    background-color: #E9EBEE;
+}
+
+.search-logo{
+    background-image: url(https://facebook.com/rsrc.php/v3/yz/r/QjiHJy8j_PU.png);
+    background-repeat: no-repeat;
+    background-size: 26px 676px;
+    background-position: 0 -644px;
+    height: 14px;
+    width: 14px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+
+.header-profile-img{
+    display: inline-block;
+    background-image: url(https://picsum.photos/40/40/?random);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    overflow: hidden;
+    margin-right: 4px;
+}
+
+
+
+
+.nav-item{
+	padding: 0 9px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item-last {
+    margin-right: 15px;
+}
+
+.nav-item:hover {
+    background-color: #3B5CA0;
+}
+
+.nav-item a * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-vert-line{
+    display: inline-block;	
+    content: '';
+    height: 18px;
+    top: 12px;
+    width: 1px;
+    background: #3B5CA0;
+}
+
+.nav-icon-item{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    opacity: .6;
+    margin-right: 8px;
+}
+
+.nav-icon-item:hover{
+    opacity: 1.0;
+}
+
+
+.nav-icon-item.friends{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+    background-position: 0 -275px;
+}
+
+.nav-icon-item.messages{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+    background-position: 0 -246px;
+}
+
+.nav-icon-item.notifications{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+    background-position: 0 -425px;
+}
+
+.nav-icon-item.info{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1063px;
+    height: 20px;
+    margin-left: 13px;
+}
+
+.nav-icon-item.more{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1190px;
+    height: 16px;
+    width: 16px;
+}
+
+
+
+.left-bar{
+    font-size:13px;
+}
+
+.left-bar-item{
+    display: inline-block;
+    width: 185px;
+    height: 25px;
+    vertical-align: middle;
+    padding: 2px 3px;
+}
+
+.left-bar-item .text, .left-bar-item .header-profile-img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.new-post-footer .item .icon.photo-video{
+    background-position: 0 -859px;
+}
+
+.new-post-footer .item .icon.feeling-activity{
+    background-position: 0 -754px;
+}
+
+.new-post-footer .item .icon.more{
+    background-position: 0 -797px;
+}
+
+
+
+.left-bar-item .icon.basketball{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/UIsbZl7tpJE.png);
+    background-size: contain;
+}
+.left-bar-item .icon.messenger{
+    background-position: 0 -1405px;
+}
+.left-bar-item .icon.news-feed{
+    background-position: 0  -963px;
+}
+
+.left-bar-item .icon.groups{
+    background-position: 0 -1279px;
+}
+.left-bar-item .icon.events{
+    background-position: 0 -1153px;
+}
+.left-bar-item .icon.pages{
+    background-position: 0 -1510px;
+}
+
+.left-bar-item .icon.photos{
+    background-position: 0 -1594px;
+}
+.left-bar-item .icon.games{
+    background-position: 0 -1174px;
+}
+.left-bar-item .icon.news-feed{
+    background-position: 0 -1490px;
+}
+.left-bar-item .icon.news-feed{
+    background-position: 0 -1343px;
+}
+
+
+.blue{
+    color: #365899;
+}
+
+.see-more .blue{
+    display: inline;
+}
+
+.text {
+    margin-left:5px;
+}
+
+
+.see-more:before{
+    background-image: url(https://facebook.com/rsrc.php/v3/yl/r/Uzqm4ZKt_GJ.png);
+    background-repeat: no-repeat;
+    background-size: 36px 1996px;
+    background-position: 0 -1942px;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 4px 8px 0 2px;
+    vertical-align: bottom;
+    
+}
+
+.left-bar-item:hover{
+    background-color: #F6F7F9;
+}
+
+.left-bar{ 
+    position: fixed;
+    width: 190px;
+}
+
+.feed-container{
+    margin-left: 200px;
+    width: 500px;
+}
+
+.right-container{
+    position: fixed;
+    margin-left: 710px;
+    width: 300px;
+    font-size: 13px;
+}
+
+
+.left-bar-header{
+    font-weight: bold;
+    color:  #81858D;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+
+
+.right-block{
+    margin-top:15px;
+    padding:6px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #dddfe2;
+    width: inherit;
+}
+
+
+.right-block-header{
+    margin:5px 0 10px 5px;
+    font-weight: bold;
+    color: #616770;
+}
+
+.stories-item{
+    margin-bottom: 8px;
+}
+
+.story-img-container{
+    /* height: 48px;
+    width: 48px; */
+    display: inline-block;
+    padding:2px;
+    border-radius: 50%;
+    border: 2px solid #4080ff;
+    vertical-align: middle;
+}
+
+.story-img{
+    background-image: url(https://picsum.photos/48/48/?random);
+    height: 48px;
+    width: 48px;
+    background-size:contain;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.story-info{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.story-author-name{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.story-info-time{
+    color: #90949c;
+}
+
+.languages{
+    display: inline-block;    
+    font-size: 12px;
+    width: 80%;
+    vertical-align: middle;
+}
+
+.languages .selected-lan{
+    color: #90949c;
+}
+
+.language-plus{
+    display: inline-block; 
+    vertical-align: middle;
+    background-color: #f6f7f9;
+    border-color: #ced0d4;
+    color: #4b4f56;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid  #4b4f56;
+    border-radius: 2px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+
+.game-container{
+    display: inline-block;
+    height: 92px;
+    padding: 4px 4px 0;
+    width: 130px;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    font-size: 11px;
+}
+.team .icon{
+    display: inline-block;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 24px;
+    background-size: contain;
+}
+
+.team .name{
+    font-weight: bold;
+}
+
+.team .name, .score{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.team .score{
+    float: right;
+    line-height: 24px;
+}
+
+.GSW{
+    background-image: url(https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-0/p50x50/12931137_10154179768597526_5729762903957927293_n.png?_nc_cat=0&oh=d9408243b716a254cf0fb8c852f53537&oe=5B9A387F);
+}
+
+.NOP{
+    background-image: url(https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-0/p50x50/12963461_10153463744417927_8264052565375416265_n.png?_nc_cat=0&oh=8814f2bf68bb98d4dd1394eadb008633&oe=5B521F71);
+}
+
+.game-state{
+	border-top: 1px solid #dddfe2;
+	margin: 5px 5px;
+    padding: 5px;
+    color: #90949c;
+}
+
+.game-state .text{
+    float: right;
+}
+
+
+
+.friends-bar{
+    background: #E9EBEE;
+	border-left: 1px solid #CCCCCC;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	top: 45px;
+    right: 0;
+    font-size: 12px;
+    
+}
+
+.friends-list{
+    width: 213px;
+    height: 100%;
+    margin-right: -25px;
+    overflow-y: scroll;
+}
+
+.friends-bar .header{
+    margin: 0 0 5px 10px;
+    font-weight: bold;
+    color: #616770;
+}
+
+.friends-bar-footer{
+	width: 100%;
+	height: 35px;
+	background: #F6F7F9;
+	position: fixed;
+    bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+.friends-bar-footer input{
+    background: #F6F7F9;
+	border: none;
+	width: 80px;
+	outline: none;
+}
+.friends-bar-footer .icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yR/r/FCR3VwJhhnC.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+}
+
+
+.friends-bar-footer .srch-icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yR/r/FCR3VwJhhnC.png);
+    background-position: -34px -350px;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 12px;
+    margin: 0  7px;
+}
+
+.friends-bar-footer .options{
+    background-position: 0 -329px;
+}
+.friends-bar-footer .new-mes{
+    background-position: -27px -220px;
+}
+.friends-bar-footer .new-group{
+    background-position: 0 -295px;
+}
+
+.friend{
+    display: inline-block;
+    vertical-align: middle;
+}
+.friend-img{
+    background-image: url(https://picsum.photos/34/34/?random);
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    background-size:contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.friend-name{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.friends-item{
+    padding: 3px 10px;
+}
+
+.friends-item:hover{
+    background-color: #DDDFE2; 
+}
+
+.friends-item a { 
+    display:flex;
+    align-items: center;
+}
+
+.friend-status{
+    display: inline-block;
+    vertical-align: middle;
+    background: rgb(66, 183, 42);
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;    
+}
+
+
+
+.new-post-header{
+	height: 33px;
+	background: #F6F7F9;
+	border-bottom: 1px solid #dddfe2;
+	border-radius: 3px 3px 0 0;
+	display:flex;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+
+.new-post-header .item {
+    display: inline-block;
+    margin: auto 7px;
+}
+
+.new-post-header .item .icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yT/r/HU4DhOUx9Cx.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+
+.new-post-header .item .text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.make-post{
+    background-position: 0 -338px;
+}
+.video-photo{
+    background-position: 0 -355px;
+}
+.live-video{
+    background-position: 0 -304px;
+}
+
+
+.post.new{
+    font-weight: bold;
+    font-size: 12px;
+    color: #4b4f56;
+}
+
+
+.new-post-footer{
+    border-top: 1px solid #dddfe2;
+}
+
+.new-post-footer .item{
+    display: inline-block;
+    border-radius: 50px;
+	background: #F6F7F9;
+    padding: 7px 10px;
+    margin: 9px 6px;
+}
+.new-post-footer .item .text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.post{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.new-post-body{
+    font-weight: normal;
+    font-size: 14px;
+    color: #A8ABB1;
+    height:70px;
+    padding: 10px 0 20px 0;
+    margin: 0 10px 0 10px;
+    position: relative;
+}
+
+.new-post-body .img{
+    background-image: url(https://picsum.photos/40/40/?random);
+    display: inline-block;
+    vertical-align:   middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.new-post-body .text{
+    display: inline-block;
+    vertical-align:   middle;
+}
+
+.new-post-body::after {
+    content:"";
+    height:12px;
+    width: 12px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color:white; 
+    top:-7px;
+    left: 60px;
+    border-top:1px solid #eaeaea;
+    border-left:1px solid #eaeaea;
+}
+
+
+.post{
+    font-size: 13px;
+}
+
+.poster-img{
+    background-image: url(https://picsum.photos/40/40/?random);
+    height: 40px;
+    width: 40px;
+    background-size:contain;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.post-header{
+    padding: 10px 5px;
+}
+
+.post{
+    padding: 10px
+}
+
+.post .photo{
+    background-image: url(https://picsum.photos/2000/1500/?random);
+    width: 100%;
+    height: 380px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.post-footer-lower{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dddfe2;
+    padding-top: 7px;
+}
+
+
+
+.post-footer-lower .item{
+    padding: 6px 40px;
+    border-radius: 2px;
+}
+.post-footer-lower .item:hover{
+    background-color: #F6F6F7;
+}
+
+
+.post-footer-lower .icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yp/r/kKSgsJcgvd-.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-footer-lower .text{
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+    color: #616770;
+}
+
+
+.post-footer-lower .icon.like{
+    background-position: 1px -192px;
+}
+.post-footer-lower .icon.comment{
+    background-position: 0 -152px;
+}
+.post-footer-lower .icon.share{
+    background-position: -19px -267px;
+}
+
+.post-footer-upper{
+    width: 100%;
+    font-size: 12px;
+    color: #868A91;
+    padding: 5px 0 ;
+}
+.post-footer-upper .left, .right{
+    display: inline-block;
+}
+
+.emotion-icon{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yp/r/kKSgsJcgvd-.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.like{
+    background-position: 0 -716px;
+}
+.love{
+    background-position: -17px -682px;
+}
+.haha{
+    background-position: -17px -665px;float: left;
+}
+
+.post-body .text{
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+
+.right-block.events{
+    font-weight: bold;
+}
+
+.right-block .item .text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-block .item{
+    margin-bottom: 4px;
+}
+
+.event-icon{
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+}
+.event-icon.event{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/R2LFtgvx3q-.png);
+    background-position: 0 -156px;
+}
+.event-icon.bday{
+    background-image: url(https://facebook.com/rsrc.php/v3/yi/r/-pGGS6keXfV.png);
+    background-position: -362px -49px;
+}
